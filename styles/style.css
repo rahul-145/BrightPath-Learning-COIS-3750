@@ -15,6 +15,11 @@ body{
     display: flex;
     flex-direction: row; 
 }
+
+.socialmedia{
+    height: 20px;
+    width: 20px;
+}
 .child{
     
     display: flex;
