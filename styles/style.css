@@ -1,0 +1,450 @@
+/* This is the css file for my website. It has all the properties for all the webpages */
+/* Importing reset.css so that there are less cross browser issues */
+@import "reset.css";
+/* Choosing the background colour and the font family of the body */
+body{
+    background-color: #2e0e43;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cta-button:hover {
+    background-color: #483d8b; /* Darker shade on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+/* Using display=flex to show the items on the webpage */
+.container{
+    display: flex;
+    flex-direction: row; 
+}
+.child{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#newpic{
+    height: 200px;
+    width: 375px;
+    padding: 1rem;
+
+}
+/* Specifying the height of Navbar */
+nav{
+    height: 50rem;
+}
+/* Specifying the background colour of main and other properties */
+main{
+    background-color: #c6bdd0;
+    padding: 2rem;
+    margin: 1rem 7rem 1rem 0rem ;
+    border-radius: 0.5rem;
+    flex-grow: .6;
+    padding-left: 2.3rem;
+}
+/* Specifying the colour of headings */
+h1{
+    color: #c7d66d;
+    font-size: 2.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+header h2{
+    color: #e9e3ed;
+    font-size: 1.5rem;
+    font-style: italic;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+}
+
+/* Grouping selectors that have common properties */
+main h2,label[for=registername],label[for=registerusername],label[for=registeremail],label[for=confirmemail],label[for=password],label[for=confirmpassword],label[for=loginusername],label[for=loginpassword],label[for=forgotusername],label[for=forgotemail],label[for=mparating],label[for=year],label[for=runtime],label[for=studio],label[for=theatricalrelease],label[for=actors],label[for=enterfile],label[for=linkcover],label[for=DVDStreamingRelease],label[for=plot],label[for=videotype],label[for=title],.block,.genres,.videotype,label[for=search],label[for=maxresult]
+{
+    color: #2e0e43;
+    font-style: normal;
+    font-weight: bold;
+    display: block;
+}
+/* Properties for input type  */
+input[type=text],input[type=password],input[type=email],input[type=url]
+{ 
+    width: 60em; 
+    margin: 0.5rem ; 
+    border: none;
+    border-bottom: 0.125rem solid #2e0e43;
+    border-top: 0rem;
+    border-radius: 0rem;
+    font-weight: bold;
+    outline: 0;
+    margin-bottom: 1.25rem;
+    padding-left: 0rem;
+    background-color: #c6bdd0;
+} 
+/* Properties for select element */
+select{
+    width: 60em; 
+    margin: 0.5rem ; 
+    border: none;
+    border-bottom: 0.125rem solid #2e0e43;
+    border-top: 0rem;
+    border-radius: 0rem;
+    font-weight: bold;
+    outline: 0;
+    margin-bottom: 1.25rem;
+    padding-left: 0rem;
+    background-color: #c6bdd0;
+}
+/* Properties for div class=error */
+.error{
+    color: #c7d66d;
+    padding: 1rem 38rem 1rem 1rem;
+    border-radius: 0.3rem;
+    margin-top:1rem;  
+    display:inline-block;
+    background-color: #2e0e43;
+    text-align: center;
+}
+label[for=rememberme]{
+    padding-bottom:5rem ;
+    color: #2e0e43;
+    font-style: normal;
+    font-weight: bold;
+    background-color: #c6bdd0;
+}
+/* properties for all the button */
+button{
+    background: linear-gradient(#023f4b,#16697a);
+    width: 52rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    border-color: #16697a;
+    border-top: 0rem;
+    border-bottom: 0rem;
+    border-left: 0rem;
+    border-right: 0rem;
+    color: #c6bdd0;
+    font-weight: bold;
+}
+/* Properties when you hover over the button */
+button:hover {
+    background: #025f71;
+    color: white;
+    font-weight: bolder;
+  }
+  /* Properties for div class =container */
+.container{
+    border-style: solid;
+    border-color: #c7d66d;
+    border-width: 0.5rem;
+    border-left: 0rem;
+    border-right: 0rem;
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+    border-bottom: 0rem; 
+}
+  /* Properties for div class = formstart */
+
+.formstart{
+    border-style: solid;
+    border-color: #c7d66d;
+    border-width: 0.3rem;
+    border-top: 0rem;
+    border-right: 0rem;
+    border-bottom: 0rem;
+    padding-left: 1rem;
+    display: flex;
+}
+/* Properties for h3 which is under nav */
+nav h3{
+    color: white;
+    font-size: 1.4rem;
+    padding-top: 1.5em;
+    padding-bottom: 1.2rem;
+
+}
+/* Properties for ul and h4 */
+ul,h4{
+    color: #e9e3ed;
+    text-decoration: none;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+/* Properties of ul */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 12.5rem;
+  }
+  /* Properties for li under a */
+li a {
+    display: block;
+    color: #e9e3ed;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+  /* Change the link color on hover */
+nav a:hover,.movieoptions a:hover {
+    background-color: #555;
+    color: white;
+  }
+  /* Properties for div class= videos and div class=account in nav bar */
+ 
+.videos,.account{
+    border-style: solid;
+    border-color: #c7d66d;
+    border-width: 0.2rem;
+    border-top: 0rem;
+    border-right: 0rem;
+    border-bottom: 0rem;
+    padding-left: 1rem;
+    margin-left: 1.7rem;
+   
+}
+/* Properties for a tag */
+a{
+    color: #e9e3ed;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+}
+    /* Properties of footer */
+footer{
+    border-style: solid;
+    border-color: #c7d66d;
+    border-width: 0.5rem;
+    border-left: 0rem;
+    border-right: 0rem;
+    border-bottom: 0rem; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #e9e3ed;
+    text-align: center;
+}
+/* Properties for id=previous and id=next */
+#previous,#next{
+    width: 5rem;
+    height: 3rem;
+}
+/* Properties for h2 under main */
+main h2{
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+}
+/* Properties for div class=grid */
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60rem;
+    margin: auto;
+}
+/* Properties for div class=moviecard */
+.moviecard{
+    text-align: center;
+    width: 15rem;
+    margin: auto;
+}
+/* Properties for img after div class=grid */
+.grid img{
+    height: 150px;
+    width: 120px;
+    padding: 1rem;
+}
+/* Properties for h3 after div class=moviecard */
+.moviecard h3{
+    color: #2e0e43;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+/* Properties for div class=movieoptions */
+.movieoptions{
+    padding: 1rem;
+}
+/* Properties for i after div class=movieoptions (fontawersome icons) */
+.movieoptions i{
+    padding: 0rem 0.2rem 0rem  0.2rem;
+    font-size: 1.3rem;
+    color: #16697a;
+}
+/* Properties for div after div class=information */
+
+.information div{
+    padding: .5rem;
+    font-size: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    color: #2e0e43;
+}
+/* Properties for div class=genre */
+.genre{
+    border: #2e0e43;
+    border-radius: 1rem;
+    border-style: solid;
+    width: 4rem;
+}
+/* Properties for i after div class=rating */
+
+.rating i{
+    color: rgba(255, 230, 0, 0.974);
+    font-size: 2rem;
+}
+/* Properties for i after header */
+header i{
+    color: #16697a;
+    font-size: 7rem;
+    padding: 0.5rem 0.5rem 1rem 1rem;
+}
+/* Properties for header */
+header{
+    display: flex;
+}
+/* Properties for id=lookup */
+#lookup{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/* Grouping selectors for common properties */
+.rating,.genres,.rating,.mparating,.year,.runtime,.studio{
+    margin: 1rem 0rem 1rem 0rem;
+}
+input[type=time],input[type=date],input[type=file]
+{ 
+    width: 60em; 
+    margin: 0.5rem ; 
+    border: none;
+    border-bottom: 0.125rem solid #2e0e43;
+    border-top: 0rem;
+    border-radius: 0rem;
+    font-weight: bold;
+    outline: 0;
+    margin-bottom: 1.25rem;
+    padding-left: 0rem;
+    background-color: #c6bdd0;
+} 
+/* Properties for h3 after main */
+main h3{
+    color: #2e0e43;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.newh{
+    color: #2e0e43;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+
+}
+
+.newimage1{
+    height: 200px;
+    width: 375px;
+    padding: 1rem;
+} 
+/* Properties for img after div class=details */
+.details img{
+    height: 500px;
+    width:331px;
+    margin: 1rem 1rem 1rem 0rem;
+}
+/* Properties for div class=details */
+.details{
+    display: flex;
+    border-width:3rem;
+    border: #c7d66d;
+    border-style: solid;
+    padding: 1rem;
+}
+/* Properties for div class=bold */
+.bold{
+    font-weight: bolder;
+    color: #2e0e43;
+    font-size: 1.2rem;
+}
+/* Properties of i after div class=checkmark */
+.checkmark i{
+    margin-left: 0.5rem;
+    color: green;
+    font-size: 1.7rem;
+}
+/* Citation- Code taken from the link in the assignment Instruction for the entire css and html of star rating system
+Code taken from-: https://dev.to/madsstoumann/star-rating-using-a-single-input-i0l */
+.rating{
+	--dir: right;
+	--fill: gold;
+	--fillbg: rgba(100, 100, 100, 0.15);
+	--heart: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.328l-1.453-1.313q-2.484-2.25-3.609-3.328t-2.508-2.672-1.898-2.883-0.516-2.648q0-2.297 1.57-3.891t3.914-1.594q2.719 0 4.5 2.109 1.781-2.109 4.5-2.109 2.344 0 3.914 1.594t1.57 3.891q0 1.828-1.219 3.797t-2.648 3.422-4.664 4.359z"/></svg>');
+	--star: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.25l-6.188 3.75 1.641-7.031-5.438-4.734 7.172-0.609 2.813-6.609 2.813 6.609 7.172 0.609-5.438 4.734 1.641 7.031z"/></svg>');
+	--stars: 5;
+	--starsize: 3rem;
+	--symbol: var(--star);
+	--value: 1;
+	--w: calc(var(--stars) * var(--starsize));
+	--x: calc(100% * (var(--value) / var(--stars)));
+	block-size: var(--starsize);
+	inline-size: var(--w);
+	position: relative;
+	touch-action: manipulation;
+	-webkit-appearance: none;
+  }
+  [dir="rtl"] .rating {
+	--dir: left;
+  }
+  .rating::-moz-range-track {
+	background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+	block-size: 100%;
+	mask: repeat left center/var(--starsize) var(--symbol);
+  }
+  .rating::-webkit-slider-runnable-track {
+	background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+	block-size: 100%;
+	mask: repeat left center/var(--starsize) var(--symbol);
+	-webkit-mask: repeat left center/var(--starsize) var(--symbol);
+  }
+  .rating::-moz-range-thumb {
+	height: var(--starsize);
+	opacity: 0;
+	width: var(--starsize);
+  }
+  .rating::-webkit-slider-thumb {
+	height: var(--starsize);
+	opacity: 0;
+	width: var(--starsize);
+	-webkit-appearance: none;
+  }
+  .rating, .rating-label {
+	display: block;
+    background-color: #c6bdd0;
+    margin-bottom: 3rem;
+    color: #2e0e43;
+    font-weight: bold;
+  }
+ /* Till here I copied the code   */
+/* Porperties for a tag after div class=forgotpassword */
+ .forgotpassword a{
+    color: #2e0e43;
+}
+/* Porperties for a tag when hovered after div class=forgotpassword */
+.forgotpassword a:hover{
+    color: #fe0288;
+    font-weight: bold;
+}
+/* properties for div class=nextprevious */
+.nextprevious{
+    display: flex;
+    justify-content: space-around;
+}
+label[for=addvidgenre]{
+    display: block;
+    padding-bottom: 0.5rem;
+}
+/* properties for div class=block */
+.block{
+    padding-bottom: 1.3rem;
+}
